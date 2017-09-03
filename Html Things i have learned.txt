@@ -1,0 +1,102 @@
+
+
+Det her er et table med en header og en almindelig del
+
+link til side med forklarelse https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table
+
+<thead>
+  <tr>
+    <th>Image</th>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Evolves Into</th>
+  </tr>
+</thead>
+<tbody>
+  <!-- Bulbasaur -->
+  <tr>
+    <td><img width="75" src="http://static.pokemonpets.com/images/monsters-images-800-800/1-Bulbasaur.png" alt=""></td>
+    <td>Bulbasaur</td>
+    <td>Grass/Poison</td>
+    <td><a href="https://pokemondb.net/pokedex/ivysaur">Ivysaur</a></td>
+  </tr>
+  <!-- Charmander -->
+  <tr>
+    <td><img width="75" src="http://static.pokemonpets.com/images/monsters-images-800-800/4-Charmander.png" alt=""></td>
+    <td>Charmander</td>
+    <td>Fire</td>
+    <td><a href="https://pokemondb.net/pokedex/charmeleon">Charmeleon</a></td>
+  </tr>
+  <!-- Squirtle -->
+  <tr>
+    <td><img width="75" src="http://static.pokemonpets.com/images/monsters-images-800-800/7-Squirtle.png" alt=""></td>
+    <td>Squirtle</td>
+    <td>Water</td>
+    <td><a href="https://pokemondb.net/pokedex/wartortle">Wartortle</a></td>
+  </tr>
+</tbody>
+</table>
+
+
+Forms som man bruger sammen med input
+
+link til forklarelse
+
+<form action="/sign-in-url" method="post">
+      <input type="text">
+      <input type="password">
+      <button>Login</button>
+</form>
+lidt flere eksempler til forms
+
+action - where the form send data to
+method - what HTTP method (get/post)
+
+
+Det her er en form uden id
+<form>
+<label for="">Username:
+    <input name="Username" type="text" placeholder="Username">
+</label>
+
+<label for="">Password:
+    <input name="Password" type="password" placeholder="Password">
+</label>
+
+<input type="submit">
+</form>
+
+
+
+  Det her er en form med id
+  <form action="http://www.wikipedia.org">
+<label for="username">Username:</label>
+<input id="username" name="Username" type="text" placeholder="Username">
+<label for="password">Password:</label>
+<input id="password"name="Password" type="password" placeholder="Password">
+<input type="submit">
+</form>
+
+
+
+  Det her er en email form som tjekker om de er fyldt
+<form action="http://www.wikipedia.org">
+<label for="email">Email:</label>
+<input id="email" name="Email" type="email" placeholder="Email" required>
+<label for="password">Password:</label>
+<input id="password"name="Password" type="password" placeholder="Password" required>
+<input type="submit">
+
+Det her er Input tags som bruges til at få data fra brugeren
+
+link til side med forklarelse https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+
+<input type="text">   Bruges til at lave et teksfelt
+
+<input type="date">   Bruges til at lave et input felt til datoer
+
+<input type="color">  Bruges til at vælge en farve
+
+<input type="file"> Bruges til at uploade en fil
+
+<input type="checkbox"> Bruges til at lave en checkbox
