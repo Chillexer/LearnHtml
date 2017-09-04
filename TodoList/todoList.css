@@ -1,0 +1,14 @@
+li{
+  border: 2px solid red;
+  background-color: blue;
+  color: white;
+}
+#hej{
+  border: 3px solid green;
+  background-color: red;
+  color: green;
+}
+.Test{
+  background-color: green;
+  text-decoration: line-through;
+}

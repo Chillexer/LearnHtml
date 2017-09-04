@@ -1,0 +1,51 @@
+
+
+/*Element: Alle elementer såsom h1, h2, og p*/
+li{
+  border: 2px solid red;
+  background-color: blue;
+  color: white;
+}
+/*id: alle ting du har givet et id såspm hej*/
+#hej{
+  border: 3px solid green;
+  background-color: red;
+  color: green;
+}
+
+/*Class: Class er flere ting som skal have de samme egenskaber såsom en li i en ul list*/
+.Test{
+  background-color: green;
+  text-decoration: line-through;
+}
+/*Star: * Bruger man til at vælge alt på siden*/
+*{
+    border: 1px solid lightgrey;
+}
+/*Descendant Selector: Bruger man til at vælge en ting inde i en anden ting
+så man kan være mere specifik uden at skulle lave en massse classes */
+li a{
+  color: blue;
+}
+/*Adjacent Selector: Bruger man til at vælge ting efter en specifik ting*/
+ul + li{
+  border: 5px solid red;
+}
+/*Attribute Selector: Kan bruges til at gøre alle links der fører til fx. google.com røde*/
+a[href="http://www.google.com"]{
+  background-color: yellow;
+}
+/*nth of type: Kan bruges til at vælge nr 3 ul,h2 eller p fx. */
+ul:nth-of-type(3){
+  background: yellow;
+}
+
+
+
+
+
+
+
+
+/*Hjemmeside med 30 CSS Selectors du skal huske*/
+/*https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048*/
