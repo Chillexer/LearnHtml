@@ -1,0 +1,15 @@
+h1{
+  color: #234567;
+  border: 1px solid purple;
+}
+h4{
+  background: rgba(23,240,34,.6);
+}
+li{
+  color: rgb(200,23,42);
+}
+body{
+  background: url(https://www.planwallpaper.com/static/images/colorful-triangles-background_yB0qTG6_dyJop8X.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
