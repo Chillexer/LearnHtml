@@ -4,11 +4,9 @@ var button = document.querySelector("button")
 var toggle = true;
 button.addEventListener("click", function() {
   if(toggle){
-    toggle = !toggle;
     div.style.background = ("blue");
-  }
-  else {
-    toggle = !toggle;
+  } else {
     div.style.background = ("white");
     }
+    toggle = !toggle;
 })
