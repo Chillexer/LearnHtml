@@ -5,19 +5,21 @@ body{
 }
 .container-content{
  background: #F7F7F7;
- height: 1000px;
- width: 60%;
+ height: 100%;
+ width: 57%;
 }
 .insideContainer{
-  padding-top: 5%;
+  padding: 5%;
+  padding-top: 4%;
 }
 div div h1{
   text-align: center;
   letter-spacing: 1.2px;
-  font-size: 600%
+  font-size: 500%;
+  width: 100%;
 }
 .content{
-  margin-top: 5%;
+  margin-top: 4%;
   border: 2px solid #0275d8;
   padding: 10px;
 }
@@ -32,8 +34,9 @@ div div h1{
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 #date{
-  margin-left: 87%;
+  text-align: right;
   font-size: 50%;
+  float: right;
 }
 .footer{
   color: white;
