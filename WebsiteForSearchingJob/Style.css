@@ -41,3 +41,14 @@ div div h1{
 .footer{
   color: white;
 }
+.imageAllign{
+  margin: auto;
+  min-height: 100%;
+  min-width: 100%;
+}
+#carouselSlides{
+  margin: 0;
+}
+.carousel-inner{
+  margin: 0;
+}
