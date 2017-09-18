@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Circles</title>
+    <link rel="stylesheet" href="css/Style.css">
+    <script src="Javascript/Lib/paperjs-v0.11.4/dist/paper-full.js" charset="utf-8"></script>
+    <script src="Javascript/Lib/howler.js-master/dist/howler.js" charset="utf-8"></script>
+    <script src="data.js" charset="utf-8"></script>
+    <script type="text/paperscript" canvas="myCanvas">
+    //For at fjerne console fejlene skal hjemmesiden hostes ved hjælp a mamp eller anden software
+    var circles = [];
+
+    function onKeyDown(event) {
+      if (keyData[event.key]) {
+        var maxPoint = new Point(view.size.width, view.size.height)
+        var randomPoint = Point.random();
+        var point = maxPoint * randomPoint;
+        circles.push(new Path.Circle(new Point(point), 500));
+        keyData[event.key].sound.play();
+        circles[circles.length -1].fillColor = keyData[event.key].color;
+      }
+    }
+
+    function onFrame(){
+      for (var i = 0; i < circles.length; i++) {
+        circles[i].fillColor.hue += 1;
+        circles[i].scale(.9);
+        if(circles[i].area < 1){
+          circles[i].remove();
+          circles.splice(i, 1);
+          i--;
+          console.log(circles);
+        }
+      }
+    }
+
+</script>
+  </head>
+  <body>
+    <canvas id="myCanvas" resize></canvas>
+
+
+    <script src="Javascript/Script.js" charset="utf-8"></script>
+  </body>
+</html>
